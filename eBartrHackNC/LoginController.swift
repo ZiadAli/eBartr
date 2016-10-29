@@ -14,6 +14,7 @@ import CoreLocation
 
 class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginButtonDelegate {
     
+    @IBOutlet weak var buttonView: FBSDKLoginButton!
     let loginButton = FBSDKLoginButton()
     let appLocationManager = CLLocationManager()
     var currentLocation = CLLocationCoordinate2D()
@@ -44,10 +45,8 @@ class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginBu
     }
     
     func initializeFacebook() {
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"];
-        loginButton.delegate = self
-        self.view.addSubview(loginButton)
-        loginButton.center = view.center
+        buttonView.readPermissions = ["public_profile", "email", "user_friends"]
+        buttonView.delegate = self
     }
     
     func initializeLocationServices() {

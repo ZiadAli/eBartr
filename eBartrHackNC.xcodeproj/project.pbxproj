@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01FDACED51A762B5A4A453F1 /* Pods_eBartrHackNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */; };
+		0307415F1DC5326400A501BF /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307415E1DC5326400A501BF /* PostController.swift */; };
+		030741611DC53D3A00A501BF /* PostFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030741601DC53D3A00A501BF /* PostFieldCell.swift */; };
 		9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B11DC4D8B100242D8C /* AppDelegate.swift */; };
 		9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B31DC4D8B100242D8C /* LoginController.swift */; };
 		9938E6B71DC4D8B100242D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6B51DC4D8B100242D8C /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0307415E1DC5326400A501BF /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		030741601DC53D3A00A501BF /* PostFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostFieldCell.swift; sourceTree = "<group>"; };
 		353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBartrHackNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6AE1DC4D8B100242D8C /* eBartrHackNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBartrHackNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6B11DC4D8B100242D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +91,9 @@
 				9938E6B11DC4D8B100242D8C /* AppDelegate.swift */,
 				9938E6B31DC4D8B100242D8C /* LoginController.swift */,
 				9938E6C91DC4EACE00242D8C /* Poster.swift */,
+				0307415E1DC5326400A501BF /* PostController.swift */,
 				9938E6B51DC4D8B100242D8C /* Main.storyboard */,
+				030741601DC53D3A00A501BF /* PostFieldCell.swift */,
 				9938E6BB1DC4D8B100242D8C /* Assets.xcassets */,
 				9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */,
 				9938E6C01DC4D8B100242D8C /* Info.plist */,
@@ -222,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0307415F1DC5326400A501BF /* PostController.swift in Sources */,
 				9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */,
+				030741611DC53D3A00A501BF /* PostFieldCell.swift in Sources */,
 				9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */,
 				9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */,
 				9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */,
