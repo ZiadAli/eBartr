@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  eBartrHackNC
 //
-//  Created by Ziad Ali on 10/29/16.
+//  Created by Ziad Ali and Christian Rust on 10/29/16.
 //  Copyright © 2016 ZiadCorp. All rights reserved.
 //
 
