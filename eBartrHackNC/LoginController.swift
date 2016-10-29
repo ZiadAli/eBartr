@@ -18,6 +18,7 @@ class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginBu
     let appLocationManager = CLLocationManager()
     var currentLocation = CLLocationCoordinate2D()
     //var geoFireRef = GeoFire()
+    // testing
     
     override func viewDidLoad() {
         super.viewDidLoad()
