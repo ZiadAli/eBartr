@@ -25,6 +25,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         let geoFireRef = GeoFire(firebaseRef: ref)
         let location = CLLocation(latitude: 38.8, longitude: 40.1)
         geoFireRef?.setLocation(location, forKey: "Location 1")
+        //Testing
     }
 
     override func didReceiveMemoryWarning() {
