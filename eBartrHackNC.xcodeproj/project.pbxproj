@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01FDACED51A762B5A4A453F1 /* Pods_eBartrHackNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */; };
 		9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B11DC4D8B100242D8C /* AppDelegate.swift */; };
 		9938E6B41DC4D8B100242D8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B31DC4D8B100242D8C /* ViewController.swift */; };
 		9938E6B71DC4D8B100242D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6B51DC4D8B100242D8C /* Main.storyboard */; };
 		9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B81DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld */; };
 		9938E6BC1DC4D8B100242D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6BB1DC4D8B100242D8C /* Assets.xcassets */; };
 		9938E6BF1DC4D8B100242D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */; };
+		9938E6C71DC4D96000242D8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBartrHackNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6AE1DC4D8B100242D8C /* eBartrHackNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBartrHackNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6B11DC4D8B100242D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9938E6B31DC4D8B100242D8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		9938E6BB1DC4D8B100242D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9938E6BE1DC4D8B100242D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9938E6C01DC4D8B100242D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E637428D7D1AFF5E111F1733 /* Pods-eBartrHackNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.debug.xcconfig"; sourceTree = "<group>"; };
+		F805A74CBC9CD05CC48CD329 /* Pods-eBartrHackNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FDACED51A762B5A4A453F1 /* Pods_eBartrHackNC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FE6A10177B6DAAD74D04DAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54B6F13C0323B08754F0078C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E637428D7D1AFF5E111F1733 /* Pods-eBartrHackNC.debug.xcconfig */,
+				F805A74CBC9CD05CC48CD329 /* Pods-eBartrHackNC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9938E6A51DC4D8B100242D8C = {
 			isa = PBXGroup;
 			children = (
 				9938E6B01DC4D8B100242D8C /* eBartrHackNC */,
 				9938E6AF1DC4D8B100242D8C /* Products */,
+				54B6F13C0323B08754F0078C /* Pods */,
+				2FE6A10177B6DAAD74D04DAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */,
 				9938E6C01DC4D8B100242D8C /* Info.plist */,
 				9938E6B81DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld */,
+				9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */,
 			);
 			path = eBartrHackNC;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9938E6C31DC4D8B100242D8C /* Build configuration list for PBXNativeTarget "eBartrHackNC" */;
 			buildPhases = (
+				0FD3BCBEBB6F6852D87D6C0C /* [CP] Check Pods Manifest.lock */,
 				9938E6AA1DC4D8B100242D8C /* Sources */,
 				9938E6AB1DC4D8B100242D8C /* Frameworks */,
 				9938E6AC1DC4D8B100242D8C /* Resources */,
+				E0A66A47BFFF4CA7F38BF2AD /* [CP] Embed Pods Frameworks */,
+				C42AA52CB44F2B4D181FC290 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +129,7 @@
 				TargetAttributes = {
 					9938E6AD1DC4D8B100242D8C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6F75VTXEGM;
+						DevelopmentTeam = 47FWPX3KEU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9938E6C71DC4D96000242D8C /* GoogleService-Info.plist in Resources */,
 				9938E6BF1DC4D8B100242D8C /* LaunchScreen.storyboard in Resources */,
 				9938E6BC1DC4D8B100242D8C /* Assets.xcassets in Resources */,
 				9938E6B71DC4D8B100242D8C /* Main.storyboard in Resources */,
@@ -134,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FD3BCBEBB6F6852D87D6C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C42AA52CB44F2B4D181FC290 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A66A47BFFF4CA7F38BF2AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9938E6AA1DC4D8B100242D8C /* Sources */ = {
@@ -261,12 +340,13 @@
 		};
 		9938E6C41DC4D8B100242D8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E637428D7D1AFF5E111F1733 /* Pods-eBartrHackNC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6F75VTXEGM;
+				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = eBartrHackNC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.eBartrHackNC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.eBartr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,12 +354,13 @@
 		};
 		9938E6C51DC4D8B100242D8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F805A74CBC9CD05CC48CD329 /* Pods-eBartrHackNC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6F75VTXEGM;
+				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = eBartrHackNC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.eBartrHackNC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.eBartr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +385,7 @@
 				9938E6C51DC4D8B100242D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

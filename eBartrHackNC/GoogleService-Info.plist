@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>962432051845-jpl9m2m335rigemo47lg3jp9eimg2v8o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.962432051845-jpl9m2m335rigemo47lg3jp9eimg2v8o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAU5_pN1u1eRLcjTf1sjtZYUR8p9vbfMVg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>962432051845</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ZiadCorp.eBartr</string>
+	<key>PROJECT_ID</key>
+	<string>ebartr-77417</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ebartr-77417.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:962432051845:ios:f6cb155878f8ce8a</string>
+	<key>DATABASE_URL</key>
+	<string>https://ebartr-77417.firebaseio.com</string>
+</dict>
+</plist>

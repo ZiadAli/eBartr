@@ -1,0 +1,6 @@
+framework module Pods_eBartrHackNC {
+  umbrella header "Pods-eBartrHackNC-umbrella.h"
+
+  export *
+  module * { export * }
+}
