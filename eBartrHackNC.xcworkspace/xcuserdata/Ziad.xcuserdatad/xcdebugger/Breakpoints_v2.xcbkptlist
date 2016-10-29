@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499451767.530716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "initializeLocationServices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499447503.23468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "LoginController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.loginButton.getter : __ObjC.FBSDKLoginButton"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447707.998279"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; eBartrHackNC.LoginController"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447707.999446"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;eBartrHackNC.LoginController&gt;"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.00058"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499447503.82283"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "LoginController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.appLocationManager.getter : __ObjC.CLLocationManager"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.00391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; eBartrHackNC.LoginController"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.005379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;eBartrHackNC.LoginController&gt;"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.006673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499447504.378704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "LoginController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.currentLocation.getter : __C.CLLocationCoordinate2D"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.009431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.currentLocation.setter : __C.CLLocationCoordinate2D"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.010577"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; eBartrHackNC.LoginController"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.01171"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;eBartrHackNC.LoginController&gt;"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.012911"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499448356.422898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "LoginController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.geoFireRef.getter : __ObjC.GeoFire"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.022723"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.geoFireRef.setter : __ObjC.GeoFire"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.023841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; eBartrHackNC.LoginController"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.02496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eBartrHackNC.LoginController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;eBartrHackNC.LoginController&gt;"
+                  moduleName = "eBartrHackNC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ziad/Documents/iOS%20Programming/eBartrHackNC/eBartrHackNC/LoginController.swift"
+                  timestampString = "499447708.026241"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499448533.394089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eBartrHackNC/LoginController.swift"
+            timestampString = "499448356.422898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

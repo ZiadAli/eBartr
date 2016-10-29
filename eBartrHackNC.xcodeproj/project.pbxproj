@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		01FDACED51A762B5A4A453F1 /* Pods_eBartrHackNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */; };
 		9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B11DC4D8B100242D8C /* AppDelegate.swift */; };
-		9938E6B41DC4D8B100242D8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B31DC4D8B100242D8C /* ViewController.swift */; };
+		9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B31DC4D8B100242D8C /* LoginController.swift */; };
 		9938E6B71DC4D8B100242D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6B51DC4D8B100242D8C /* Main.storyboard */; };
 		9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6B81DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld */; };
 		9938E6BC1DC4D8B100242D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6BB1DC4D8B100242D8C /* Assets.xcassets */; };
 		9938E6BF1DC4D8B100242D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */; };
 		9938E6C71DC4D96000242D8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */; };
+		9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6C91DC4EACE00242D8C /* Poster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		353A907FEBE11FF3B11D98A1 /* Pods_eBartrHackNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBartrHackNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6AE1DC4D8B100242D8C /* eBartrHackNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBartrHackNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9938E6B11DC4D8B100242D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9938E6B31DC4D8B100242D8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9938E6B31DC4D8B100242D8C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9938E6B61DC4D8B100242D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9938E6B91DC4D8B100242D8C /* eBartrHackNC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eBartrHackNC.xcdatamodel; sourceTree = "<group>"; };
 		9938E6BB1DC4D8B100242D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9938E6BE1DC4D8B100242D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9938E6C01DC4D8B100242D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9938E6C91DC4EACE00242D8C /* Poster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
 		E637428D7D1AFF5E111F1733 /* Pods-eBartrHackNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.debug.xcconfig"; sourceTree = "<group>"; };
 		F805A74CBC9CD05CC48CD329 /* Pods-eBartrHackNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				9938E6B11DC4D8B100242D8C /* AppDelegate.swift */,
-				9938E6B31DC4D8B100242D8C /* ViewController.swift */,
+				9938E6B31DC4D8B100242D8C /* LoginController.swift */,
+				9938E6C91DC4EACE00242D8C /* Poster.swift */,
 				9938E6B51DC4D8B100242D8C /* Main.storyboard */,
 				9938E6BB1DC4D8B100242D8C /* Assets.xcassets */,
 				9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */,
@@ -219,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */,
 				9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */,
-				9938E6B41DC4D8B100242D8C /* ViewController.swift in Sources */,
+				9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */,
 				9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
