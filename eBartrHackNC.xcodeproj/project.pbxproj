@@ -236,8 +236,10 @@
 				9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */,
 				030741611DC53D3A00A501BF /* PostFieldCell.swift in Sources */,
 				9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */,
+				996559561DC53A8E00B498BB /* FeedController.swift in Sources */,
 				9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */,
 				9938E6B21DC4D8B100242D8C /* AppDelegate.swift in Sources */,
+				996559581DC53ADF00B498BB /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

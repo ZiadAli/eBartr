@@ -12,12 +12,13 @@ import FBSDKLoginKit
 import GeoFire
 import CoreLocation
 
+var currentLocation = CLLocationCoordinate2D()
+
 class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var buttonView: FBSDKLoginButton!
     let loginButton = FBSDKLoginButton()
     let appLocationManager = CLLocationManager()
-    var currentLocation = CLLocationCoordinate2D()
     //var geoFireRef = GeoFire()
     // testing
     
