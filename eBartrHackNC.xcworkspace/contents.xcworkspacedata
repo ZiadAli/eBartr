@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/christianrust/Documents/iOS Programming/eBartr/PostFieldCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:eBartrHackNC.xcodeproj">
    </FileRef>
    <FileRef
