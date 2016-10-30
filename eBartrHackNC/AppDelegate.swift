@@ -10,15 +10,41 @@ import UIKit
 import CoreData
 import Firebase
 import FBSDKLoginKit
+import CoreLocation
+
+let appLocationManager = CLLocationManager()
+var myLocation = CLLocationCoordinate2D()
+var locationOn = false
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //initializeLocationServices()
         FIRApp.configure()
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        initializeLocationServices()
+        return true
+    }
+    
+    func initializeLocationServices() {
+        appLocationManager.requestAlwaysAuthorization()
+        appLocationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            appLocationManager.delegate = self
+            appLocationManager.desiredAccuracy = kCLLocationAccuracyBest
+            appLocationManager.startUpdatingLocation()
+            locationOn = true
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        myLocation = manager.location!.coordinate
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {

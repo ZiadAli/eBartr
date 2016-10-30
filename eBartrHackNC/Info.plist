@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Allow this app to access your location?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
