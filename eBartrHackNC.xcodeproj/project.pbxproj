@@ -20,6 +20,12 @@
 		9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6C91DC4EACE00242D8C /* Poster.swift */; };
 		996559561DC53A8E00B498BB /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996559551DC53A8E00B498BB /* FeedController.swift */; };
 		996559581DC53ADF00B498BB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996559571DC53ADF00B498BB /* FeedCell.swift */; };
+		9965595C1DC5DB2900B498BB /* SegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9965595B1DC5DB2900B498BB /* SegmentedCell.swift */; };
+		996559641DC5E4A100B498BB /* book.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9965595E1DC5E4A100B498BB /* book.jpg */; };
+		996559651DC5E4A100B498BB /* cooking.png in Resources */ = {isa = PBXBuildFile; fileRef = 9965595F1DC5E4A100B498BB /* cooking.png */; };
+		996559661DC5E4A100B498BB /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 996559601DC5E4A100B498BB /* music.png */; };
+		996559671DC5E4A100B498BB /* computer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 996559611DC5E4A100B498BB /* computer.jpg */; };
+		996559681DC5E4A100B498BB /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 996559621DC5E4A100B498BB /* car.jpg */; };
 		E08F61501DC5B91900D2EBE5 /* profileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F614D1DC5B91900D2EBE5 /* profileController.swift */; };
 		E08F61511DC5B91900D2EBE5 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F614E1DC5B91900D2EBE5 /* ProfileTableViewController.swift */; };
 		E08F61531DC5B92900D2EBE5 /* chooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F61521DC5B92900D2EBE5 /* chooseController.swift */; };
@@ -43,6 +49,12 @@
 		9938E6C91DC4EACE00242D8C /* Poster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
 		996559551DC53A8E00B498BB /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		996559571DC53ADF00B498BB /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		9965595B1DC5DB2900B498BB /* SegmentedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCell.swift; sourceTree = "<group>"; };
+		9965595E1DC5E4A100B498BB /* book.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book.jpg; sourceTree = "<group>"; };
+		9965595F1DC5E4A100B498BB /* cooking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooking.png; sourceTree = "<group>"; };
+		996559601DC5E4A100B498BB /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		996559611DC5E4A100B498BB /* computer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = computer.jpg; sourceTree = "<group>"; };
+		996559621DC5E4A100B498BB /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 		E08F614D1DC5B91900D2EBE5 /* profileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileController.swift; sourceTree = "<group>"; };
 		E08F614E1DC5B91900D2EBE5 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		E08F61521DC5B92900D2EBE5 /* chooseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseController.swift; sourceTree = "<group>"; };
@@ -84,6 +96,7 @@
 		9938E6A51DC4D8B100242D8C = {
 			isa = PBXGroup;
 			children = (
+				9965595D1DC5E45B00B498BB /* Resources */,
 				9938E6B01DC4D8B100242D8C /* eBartrHackNC */,
 				9938E6AF1DC4D8B100242D8C /* Products */,
 				54B6F13C0323B08754F0078C /* Pods */,
@@ -109,6 +122,7 @@
 				9938E6B31DC4D8B100242D8C /* LoginController.swift */,
 				9938E6C91DC4EACE00242D8C /* Poster.swift */,
 				0307415E1DC5326400A501BF /* PostController.swift */,
+				9965595B1DC5DB2900B498BB /* SegmentedCell.swift */,
 				E08F615C1DC5CA6900D2EBE5 /* ButtonCell.swift */,
 				9938E6B51DC4D8B100242D8C /* Main.storyboard */,
 				996559571DC53ADF00B498BB /* FeedCell.swift */,
@@ -119,8 +133,20 @@
 				9938E6B81DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld */,
 				9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */,
 				E08F615A1DC5BD9400D2EBE5 /* PostCell.swift */,
+				9965595E1DC5E4A100B498BB /* book.jpg */,
+				9965595F1DC5E4A100B498BB /* cooking.png */,
+				996559601DC5E4A100B498BB /* music.png */,
+				996559611DC5E4A100B498BB /* computer.jpg */,
+				996559621DC5E4A100B498BB /* car.jpg */,
 			);
 			path = eBartrHackNC;
+			sourceTree = "<group>";
+		};
+		9965595D1DC5E45B00B498BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9938E6C71DC4D96000242D8C /* GoogleService-Info.plist in Resources */,
+				996559661DC5E4A100B498BB /* music.png in Resources */,
+				996559671DC5E4A100B498BB /* computer.jpg in Resources */,
+				996559641DC5E4A100B498BB /* book.jpg in Resources */,
+				996559651DC5E4A100B498BB /* cooking.png in Resources */,
 				9938E6BF1DC4D8B100242D8C /* LaunchScreen.storyboard in Resources */,
+				996559681DC5E4A100B498BB /* car.jpg in Resources */,
 				9938E6BC1DC4D8B100242D8C /* Assets.xcassets in Resources */,
 				9938E6B71DC4D8B100242D8C /* Main.storyboard in Resources */,
 			);
@@ -252,6 +283,7 @@
 				E08F615D1DC5CA6900D2EBE5 /* ButtonCell.swift in Sources */,
 				9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */,
 				030741611DC53D3A00A501BF /* PostFieldCell.swift in Sources */,
+				9965595C1DC5DB2900B498BB /* SegmentedCell.swift in Sources */,
 				9938E6BA1DC4D8B100242D8C /* eBartrHackNC.xcdatamodeld in Sources */,
 				996559561DC53A8E00B498BB /* FeedController.swift in Sources */,
 				9938E6B41DC4D8B100242D8C /* LoginController.swift in Sources */,

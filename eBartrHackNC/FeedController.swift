@@ -20,19 +20,8 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         refresh()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         initializeLocationServices()
         self.refreshControl?.addTarget(self, action: #selector(FeedController.refresh), for: .valueChanged)
-        var post = [String:String]()
-        post["Title"] = "Testing"
-        post["Description"] = "123"
-        post["Type"] = "Request"
-        posts.append(post)
-        tableView.refreshControl?.beginRefreshing()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +43,8 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
         if !initializedLocation {
             initializeReloaded()
             initializedLocation = true
+            refresh()
+            print("Refreshed")
         }
     }
     
@@ -63,7 +54,7 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
         ref = ref.child("Posts")
         let location = CLLocation(latitude: appLocation.latitude, longitude: appLocation.longitude)
         print("Current Latitude: \(location.coordinate.latitude) Current Longitude: \(location.coordinate.longitude)")
-        let query = geoFireRef?.query(at: CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), withRadius: 5000.0)
+        let query = geoFireRef?.query(at: CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), withRadius: 10.0)
         query?.observe(GFEventType.keyEntered, with: { (key, location) in
             guard let key = key else {return}
             guard let location = location else {return}
@@ -73,6 +64,7 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
                 post["Title"] = value?["Title"] as? String
                 post["Description"] = value?["Description"] as? String
                 post["Type"] = value?["Type"] as? String
+                post["Tags"] = value?["Tags"] as? String
                 self.posts.append(post)
             })
             print("Key: \(key) Latitude: \(location.coordinate.latitude) Longitude: \(location.coordinate.longitude)")
@@ -80,17 +72,15 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
     }
     
     func refresh() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
+        self.tableView.reloadData()
+        if (self.refreshControl?.isRefreshing)! {
+            self.refreshControl?.endRefreshing()
         }
         for post in posts {
             print("Post: \(post["Title"])")
         }
         print("Activated Refresh")
         print("Count: \(posts.count)")
-        if (self.refreshControl?.isRefreshing)! {
-            self.refreshControl?.endRefreshing()
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -112,10 +102,28 @@ class FeedController: UITableViewController, CLLocationManagerDelegate {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FeedCell
-        let post = posts[indexPath.row]
+        let post = posts[posts.count - indexPath.row - 1]
         cell.postTitle.text = post["Title"]
         cell.postDescription.text = post["Description"]
         cell.postType.text = post["Type"]
+        if post["Tags"] == "Books" {
+            cell.cellImage.image = UIImage(named: "book.jpg")
+        }
+        else if post["Tags"] == "Cars" {
+            cell.cellImage.image = UIImage(named: "car.jpg")
+        }
+        else if post["Tags"] == "Computers" {
+            cell.cellImage.image = UIImage(named: "computer.jpg")
+        }
+        else if post["Tags"] == "Cooking" {
+            cell.cellImage.image = UIImage(named: "cooking.png")
+        }
+        else if post["Tags"] == "Music" {
+            cell.cellImage.image = UIImage(named: "music.png")
+        }
+        if cell.postType.text == "Offer" {
+            cell.postType.textColor = UIColor.blue
+        }
         return cell
     }
 

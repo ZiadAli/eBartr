@@ -79,6 +79,7 @@ class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginBu
                 }
                 else {
                     print("User logged in with Facebook")
+                    self.performSegue(withIdentifier: "showNavigation", sender: loginButton)
                 }
             })
         }
