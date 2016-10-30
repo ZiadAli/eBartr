@@ -10,17 +10,27 @@ import UIKit
 
 class PostController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    let postTags = ["Title", "Description", "Time", "Tags"]
+    let postTags = ["Title", "Description", "Time", "Tags", ""]
     
-    let postGhost = ["Enter title", "Enter description", "Enter time", "Select tags"]
+    let postGhost = ["Enter title", "Enter description", "Enter time", "Select tags", ""]
     
     let tags = ["music", "cars", "service", "computer skills"]
     
     var picker = UIPickerView()
     var textField = UITextField()
+    var titleField = UITextField()
+    var descriptionField = UITextField()
+    var timeField = UITextField()
+    var tagField = UITextField()
     
     override func viewDidLoad() {
-        tableView.tableFooterView = UIView()
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.green
+        tableView.tableFooterView = footerView
+        let submitButton = UIButton()
+        footerView.addSubview(submitButton)
+        submitButton.center = footerView.center
+        submitButton.titleLabel?.text = "Submit"
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
@@ -66,24 +76,36 @@ class PostController: UITableViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostFieldCell
-        if indexPath.section >= 3 {
-            cell.cellTextField.inputView = picker
-            textField = cell.cellTextField
-        
+        if indexPath.section != 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostCell
+            if indexPath.section == 0 {titleField = cell.cellTextField}
+            else if indexPath.section == 1 {descriptionField = cell.cellTextField}
+            else if indexPath.section == 2 {timeField = cell.cellTextField}
+            else if indexPath.section == 3 {
+                tagField = cell.cellTextField
+                cell.cellTextField.inputView = picker
+                textField = cell.cellTextField
+            }
+            cell.cellTextField.placeholder = postGhost[indexPath.section]
+            return cell
         }
-
-        //cell.cellLabel?.text = postTags[indexPath.section]
-        cell.cellTextField.placeholder = postGhost[indexPath.section]
         
-        
-        return cell
+        else {
+            let buttonCell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell", for: indexPath) as! ButtonCell
+            buttonCell.cellButton.addTarget(self, action: #selector(PostController.submitButtonPressed), for: .touchUpInside)
+            return buttonCell
+        }
     }
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    
+    func submitButtonPressed() {
+        let post = ["Title":titleField.text!, "Description":descriptionField.text!, "Time":timeField.text!, "Tags":tagField.text!]
+        let poster = Poster()
+        poster.makePost(post: post)
+        _ = self.navigationController?.popViewController(animated: true)
+    }
     
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return tags.count

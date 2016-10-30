@@ -13,7 +13,7 @@ import GeoFire
 
 class Poster: NSObject, CLLocationManagerDelegate {
     
-    func makePost(currentLocation:CLLocationCoordinate2D, post:[String:String]) {
+    func makePost(post:[String:String]) {
         var ref = FIRDatabase.database().reference()
         let geoFireRef = GeoFire(firebaseRef: ref.child("Locations"))
         ref = ref.child("Posts")

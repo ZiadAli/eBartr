@@ -1,4 +1,3 @@
-//
 //  PostFieldCell.swift
 //  eBartrHackNC
 //
@@ -8,10 +7,9 @@
 
 import UIKit
 
-class PostFieldCell: UITableViewCell {
+class PostCell: UITableViewCell {
     
     @IBOutlet weak var cellTextField: UITextField!
-    @IBOutlet weak var cellLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -42,7 +42,7 @@ class LoginController: UIViewController, CLLocationManagerDelegate, FBSDKLoginBu
         else {
             post = ["Title":"Wassup Everybody", "Description":"I'm Dr. Nick", "User":"nil"]
         }
-        poster.makePost(currentLocation: currentLocation, post: post)
+        poster.makePost(post: post)
     }
     
     func initializeFacebook() {

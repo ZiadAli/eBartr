@@ -37,6 +37,6 @@ class FeedCell: UITableViewCell {
         else {
             post = ["Title":"Wassup Everybody", "Description":"I'm Dr. Nick", "User":"nil", "Type":"Owner"]
         }
-        poster.makePost(currentLocation: currentLocation, post: post)
+        poster.makePost(post: post)
     }
 }
