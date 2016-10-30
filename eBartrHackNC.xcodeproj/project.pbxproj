@@ -18,6 +18,7 @@
 		9938E6BF1DC4D8B100242D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6BD1DC4D8B100242D8C /* LaunchScreen.storyboard */; };
 		9938E6C71DC4D96000242D8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */; };
 		9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9938E6C91DC4EACE00242D8C /* Poster.swift */; };
+		E08F61491DC580C700D2EBE5 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F61481DC580C700D2EBE5 /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9938E6C01DC4D8B100242D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9938E6C61DC4D96000242D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9938E6C91DC4EACE00242D8C /* Poster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
+		E08F61481DC580C700D2EBE5 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		E637428D7D1AFF5E111F1733 /* Pods-eBartrHackNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.debug.xcconfig"; sourceTree = "<group>"; };
 		F805A74CBC9CD05CC48CD329 /* Pods-eBartrHackNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBartrHackNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-eBartrHackNC/Pods-eBartrHackNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		9938E6B01DC4D8B100242D8C /* eBartrHackNC */ = {
 			isa = PBXGroup;
 			children = (
+				E08F61481DC580C700D2EBE5 /* ProfileTableViewController.swift */,
 				9938E6B11DC4D8B100242D8C /* AppDelegate.swift */,
 				9938E6B31DC4D8B100242D8C /* LoginController.swift */,
 				9938E6C91DC4EACE00242D8C /* Poster.swift */,
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08F61491DC580C700D2EBE5 /* ProfileTableViewController.swift in Sources */,
 				0307415F1DC5326400A501BF /* PostController.swift in Sources */,
 				9938E6CA1DC4EACE00242D8C /* Poster.swift in Sources */,
 				030741611DC53D3A00A501BF /* PostFieldCell.swift in Sources */,

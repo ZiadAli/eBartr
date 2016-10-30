@@ -1,30 +1,20 @@
 //
-//  PostController.swift
+//  ProfileTableViewController.swift
 //  eBartrHackNC
 //
-//  Created by Josh Rodriguez and Christian Rust on 10/29/16.
+//  Created by Christian Rust on 10/29/16.
 //  Copyright © 2016 ZiadCorp. All rights reserved.
 //
 
 import UIKit
 
-class PostController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ProfileTableViewController: UITableViewController {
 
-    let postTags = ["Title", "Description", "Time", "Tags"]
-    
-    let postGhost = ["Enter title", "Enter description", "Enter time", "Select tags"]
-    
-    let tags = ["music", "cars", "service", "computer skills"]
-    
-    var picker = UIPickerView()
-    var textField = UITextField()
+    let sectionTitles = ["Name", "Email", "Phone Number", "About me", "Tags"]
     
     override func viewDidLoad() {
-        tableView.tableFooterView = UIView()
         super.viewDidLoad()
-        picker.delegate = self
-        picker.dataSource = self
-
+        tableView.tableFooterView = UIView()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,76 +31,26 @@ class PostController: UITableViewController, UIPickerViewDelegate, UIPickerViewD
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return postTags.count
+        return sectionTitles.count
     }
 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if (section == 0) {
-            return postTags[0]
-        }
-        if (section == 1) {
-            return postTags[1]
-        }
-        if (section == 2) {
-            return postTags[2]
-        }
-        if (section == 3) {
-            return postTags[3]
-        }
-        return nil
-    }
+
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostFieldCell
-        if indexPath.section >= 3 {
-            cell.cellTextField.inputView = picker
-            textField = cell.cellTextField
-        
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        //cell.cellLabel?.text = postTags[indexPath.section]
-        cell.cellTextField.placeholder = postGhost[indexPath.section]
         
-        
+
         return cell
     }
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    
-    
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return tags.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        textField.text = tags[row]
-        pickerView.reloadAllComponents()
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return tags[row]
-    }
-    
-    
-    
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        
-        let color = (row == pickerView.selectedRow(inComponent: component)) ? UIColor.blue : UIColor.black
-        
-        return NSAttributedString(string: tags[row], attributes: [NSForegroundColorAttributeName: color])
-        
-    }
-    
-    
-}
- 
 
     /*
     // Override to support conditional editing of the table view.
@@ -157,4 +97,4 @@ class PostController: UITableViewController, UIPickerViewDelegate, UIPickerViewD
     }
     */
 
-
+}
